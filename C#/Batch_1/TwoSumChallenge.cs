@@ -22,7 +22,7 @@ namespace Batch_1
         /// </remarks>
         /// <param name="nums">Array of numbers to be traversed</param>
         /// <param name="target">The target value to be checked</param>
-        /// <returns>Indexes of the two nums (that add up to the target)</returns>
+        /// <returns> A Turple - Indexes of the two nums (that add up to the target)</returns>
         public static (int, int) TwoSum(int[] nums, int target)
         {
             // A dictionary to hold the value and their indexes
