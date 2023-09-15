@@ -36,6 +36,7 @@ namespace Batch_1
 
                 // Checks if dictionary has a key <a> in it. If yes, it returns
                 // the value of the <a> key and the index of b - the present index
+                // Note that you can also use: if (seen.ContainsKey(diff)) to check
                 if (seen.TryGetValue(diff, out var value))
                     return (seen[diff], i);
 
