@@ -28,6 +28,7 @@ namespace Batch_1
             // A dictionary to hold the value and their indexes
             var seen = new Dictionary<int, int>();
 
+            // Loops through the given array of numbers
             for (int i = 0; i < nums.Length; i++) 
             {
                 // Checks say; a = c - b starting from first value in array
