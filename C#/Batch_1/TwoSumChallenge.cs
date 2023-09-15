@@ -6,7 +6,7 @@ namespace Batch_1
     public class TwoSumChallenge
     {
         /// <summary>
-        ///     Finds the indexes of the first pair of numbers in a given array that when
+        ///     Finds the indexes of the first number pair (two numbers) in a given array that when
         ///     added (the number not their indexes) sums up to exactly the given target.
         /// </summary>
         /// <example>

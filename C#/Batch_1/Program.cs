@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             int[] arr = { 8, 2, 9, 4, 5 };
-            Console.WriteLine(FirstPackChallenges.TwoSum(arr, 13));
+            Console.WriteLine(TwoSumChallenge.TwoSum(arr, 13));
         }
     }
 }
