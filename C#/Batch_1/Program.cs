@@ -1,11 +1,19 @@
 ﻿namespace Batch_1
 {
-    internal class Program
+    public class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            int[] arr = { 8, 2, 9, 4, 5 };
-            Console.WriteLine(TwoSumChallenge.TwoSum(arr, 13));
+            CustomStopWatch sw = new();
+
+            sw.Start();
+            Console.WriteLine(LargestPalindromeChallenge.IsPalindromeStr("MADA"));
+            sw.Stop();
+
+            Console.WriteLine(
+                $"StopWatch elapsed: {(double)sw.ElapsedMilliseconds / 1000} seconds, StartAt: {sw?.StartAt!.Value}, EndAt:{sw?.EndAt!.Value}"
+            );
+
         }
     }
 }
