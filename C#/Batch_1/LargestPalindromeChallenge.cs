@@ -95,15 +95,25 @@ namespace Batch_1
             return largestPalindrome;
         }
 
-        public static bool IsPalindromeStr<T>(T num)
+        /// <summary>
+        ///     Calculate the palindrom of a value by first converting to string if it's not a string
+        /// </summary>
+        /// <typeparam name="T">Generic type parameter</typeparam>
+        /// <param name="data">The value to chechk</param>
+        /// <returns>True - if palindrome or False - if not palindrome</returns>
+        public static bool IsPalindromeStr<T>(T data)
         {
-            string? str = num!.ToString();
+            // Convert data to string if not string
+            string? str = data!.ToString();
 
+            // Get half of the length of the str
             double len = Math.Round((double)str!.Length / 2);
+
             for (int i = 0; i <= len; i++)
             {
                 if (str[i] != str[str.Length - 1 - i]) return false;
             }
+
             return true;
         }
 
