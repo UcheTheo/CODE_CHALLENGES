@@ -5,12 +5,13 @@
         static void Main()
         {
             CustomStopWatch sw = new();
-            int[] arr = {3, 1, 3, 2};
             sw.Start();
-            int[] result = ProdArrayExceptSelf.ProdArrV2(arr);
-            for (int i = 0; i < result.Length; i++)
-                Console.Write("{0} ", result[i]);
-            Console.WriteLine();
+    //----------------------------------------------------------------------------------------------------
+
+            int[] arr = {1, 1, 3, 4, 6, 5};
+            Console.WriteLine(HasDuplicateChanllenge.HasDuplicate(arr));
+
+    //----------------------------------------------------------------------------------------------------
             sw.Stop();
 
             Console.WriteLine(
